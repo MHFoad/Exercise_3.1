@@ -8,7 +8,7 @@ on:
       - main
 defaults:
   run:
-    working-directory: express-app
+    working-directory: Exercise_3.1
 jobs:
   publish-docker-hub:
     name: Publish image to Docker Hub
