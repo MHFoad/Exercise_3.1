@@ -6,11 +6,13 @@ on:
   push:
     branches:
       - main
-
+defaults:
+  run:
+    working-directory: express-app
 jobs:
-  build:
+  publish-docker-hub:
+    name: Publish image to Docker Hub
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
